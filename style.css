@@ -18,6 +18,11 @@ html {
     background-size: 100%;
     background-attachment: fixed;
 }
+@media (min-width:350px){
+  .landing_page {
+       height: 215px;
+   }
+}
 @media (min-width:576px){
   .landing_page {
        height: 315px;
@@ -65,7 +70,16 @@ html {
   } 
 }
 .nav-link {
-    color: #5e4334!important;
+    color: #ffffff!important;
+    margin-left: 20px;
+}
+.nav-logo-1 img {
+  width: 25px;
+  height: 25px;
+}
+.d-flex {
+  background-color: #216516;
+  border-radius: 4px;
 }
 .dropdown-menu a {
     color: #216516;
@@ -87,6 +101,11 @@ html {
 }
 .travel_modal {
     margin-top: 150px;
+}
+@media (min-width:350px){
+  .travel_modal {
+       margin-top: 90px;
+   }
 }
 @media (min-width:576px){
    .travel_modal {
