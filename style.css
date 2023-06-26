@@ -11,23 +11,58 @@ html {
   }
 /* Header */
 .landing_page {
-    height: 740px;
+    height: 270px;
     width: 100%;
     background-image: url(./images/header.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100%;
     background-attachment: fixed;
 }
-
+@media (min-width:576px){
+  .landing_page {
+       height: 315px;
+   }
+}
+@media (min-width:768px){
+  .landing_page {
+       height: 420px;
+   }
+}
+@media (min-width:992px){
+  .landing_page {
+       height: 548px;
+   }
+}
+@media (min-width:1200px){
+   .landing_page {
+        height: 668px;
+    }
+}
+@media (min-width:1300px){
+  .landing_page {
+       height: 680px;
+   }
+}
 
 /* nav bar */
 
 .nav-brand {
     color: #5e4334;
+    font-size: 14px;
+}
+@media (min-width:992px){
+  .nav-brand {
+    font-size: 18px;
+  }
 }
 .nav-brand-place {
     color: #216516;
-    font-size: 3rem;
+    font-size: 25px;
+}
+@media (min-width:992px){
+  .nav-brand-place {
+    font-size: 50px;
+  } 
 }
 .nav-link {
     color: #5e4334!important;
@@ -51,19 +86,50 @@ html {
 
 }
 .travel_modal {
-    margin-top: 550px;
+    margin-top: 150px;
+}
+@media (min-width:576px){
+   .travel_modal {
+        margin-top: 175px;
+    }
+}
+@media (min-width:768px){
+  .travel_modal {
+       margin-top: 215px;
+   }
+}
+@media (min-width:992px){
+  .travel_modal {
+       margin-top: 310px;
+   }
+}
+@media (min-width:1200px){
+   .travel_modal {
+        margin-top: 425px;
+    }
+}
+@media (min-width:1300px){
+  .travel_modal {
+       margin-top: 485px;
+   }
 }
 .travel_modal button {
-    background-color: #5e4334;
-    border: none;
-    color: white;
+  background-color: #5e4334;
+  border: none;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 1px 1px;
+  cursor: pointer;
+}
+@media (min-width:992px){
+.travel_modal button {
     padding: 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
-    margin: 1px 1px;
-    cursor: pointer;
+}
 }
 .travel_modal button:hover {
     background-color: #216516;
@@ -98,7 +164,7 @@ textarea {
 /* About */
 .about-section {
     background-color: antiquewhite;
-    
+    padding-bottom: 20px;
 }
 .about{
     padding-top: 20px;
@@ -147,6 +213,7 @@ p{
     color: #216516;
     text-decoration: underline;
     font-family: 'Ubuntu', sans-serif;
+    padding-top: 20px;
 }
 .ayurveda-section {
     background-color: #f3f7e6;
@@ -166,6 +233,9 @@ p{
     padding-top: 20px;
     padding-left: 40px;
 }
+.col-lg-4 {
+  padding-bottom: 20px;
+}
 .btn-2 {
     background-color: #216516!important;
     color: white!important;
@@ -180,8 +250,13 @@ p{
 .slide-section{
     background-color: antiquewhite;
 }
-.slide-section img {
+.pt-3 img {
+    width: 200px;
+}
+@media (min-width:800px){
+  .slide-section img {
     width: 400px;
+}
 }
 .carousel-item img {
     height: 400px;
@@ -212,6 +287,8 @@ p{
   margin: auto;
   display: grid;
   grid-gap: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 /* Screen larger than 576px? 2 column */
@@ -421,17 +498,31 @@ hr {
 
 .footer-distributed .footer-links a{
 	display:inline-block;
-	line-height: 1.8;
-  font-weight:400;
+	line-height: 1;
 	text-decoration: none;
 	color:  inherit;
+  font-size: 12px;
+}
+@media (min-width:800px){
+  .footer-distributed .footer-links a {
+    font-size: 18px;
+    line-height: 1.8;
+}
+}
+
+.reference p {
+  font-size: 12px;
+  color: white;
+}
+.reference a {
+  text-decoration: none;
+  color:  lightseagreen;
 }
 
 .footer-distributed .footer-company-name{
 	color:  #000000;
 	font-size: 14px;
 	font-weight: normal;
-	margin: 0;
 }
 
 /* Footer Center */
